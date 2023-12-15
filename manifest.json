@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Cars Backgrounds",
+  "description": "This is the beautiful cars background extension.",
+  "version": "3.0",
+  "browser_action": {
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

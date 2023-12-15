@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>New Tab</title>
+</head>
+<body>
+    <section class="extension" id="root">
+        <div class="title">
+            <h1>Cars Background</h1>
+        </div>
+
+        <div class="container">
+            <div class="top-toolbar" id="topToolBar">
+                <div class="top-toolbar-container">
+                    <span id="dayOfWeek">{{apiData.dayOfTheWeek}}</span>
+                    <span id="dateTime">{{apiData.currentDateTime | date}}</span>
+                </div>
+            </div>
+
+            <form method="get" action="https://www.powerofsearches.com/Results.aspx">
+                <input id="searchinput" type="text" placeholder="Search..." name="q" value="" />
+                <input type="hidden" name="gd" value="SY1001788" />
+                <input type="hidden" name="searchsource" value="69" />
+                <button type="submit">Search</button>
+            </form>
+            <div class="bottom-toolbar">
+                <div class="toolbar-container">
+                    <div class="links">
+                        <a href="https://manictraffic.com/privacy-policy">Privacy Policy</a>
+                        <a href="https://manictraffic.com/terms-of-service">Terms Of Use</a>
+                        <a href="https://manictraffic.com/contact-us">Contact Us</a>
+                        <img id='settingsButton' src="/assets/icons/settings.png" alt="Settings">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="settingsModal">
+            <div class='modalContent'>
+                <div class="settings">
+                    <div class="close">
+                        <img src="/assets/icons/close.svg" alt="Close">
+                    </div>
+
+                    <div class="row">
+                        <img src='assets/images/t1.jpg' class='modalImage' data-background='1.jpg'>
+                        <img src='assets/images/t2.jpg' class='modalImage' data-background='2.jpg'>
+                        <img src='assets/images/t3.jpg' class='modalImage' data-background='3.jpg'>
+                    </div>
+                    <div class="row">
+                        <img src='assets/images/t4.jpg' class='modalImage' data-background='4.jpg'>
+                        <img src='assets/images/t5.jpg' class='modalImage' data-background='5.jpg'>
+                        <img src='assets/images/t6.jpg' class='modalImage' data-background='6.jpg'>
+                    </div>
+
+                    <button id='saveButton'>Save</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src='newtab.js'></script>
+</body>
+</html>
