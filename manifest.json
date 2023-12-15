@@ -3,8 +3,6 @@
   "name": "Cars Backgrounds",
   "description": "This is the beautiful cars background extension.",
   "version": "3.0",
-  "browser_action": {
-  },
   "chrome_url_overrides": {
     "newtab": "newtab.html"
   },
