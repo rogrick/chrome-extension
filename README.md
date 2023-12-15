@@ -4,7 +4,9 @@ Test assessment showcasing the Chrome extension, built with vanilla JavaScript, 
 
 ## Screencast
 
-Screencast showcasing app: [PLACEHOLDER]
+Screencast showcasing app: 
+
+https://github.com/rogrick/chrome-extension/assets/151864826/2c2b47a3-d1c1-47cd-be8b-6523e461511d
 
 ## Get Started
 
